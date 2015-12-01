@@ -1,0 +1,189 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	background: #f8f8f8;
+	font-family: 'Roboto';
+	color: #393939;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	width: 100%;
+}
+
+.content {
+	padding: 0 2rem;
+	margin: 2rem auto 2rem;
+	max-width: 1100px;
+}
+
+.header-content {
+	color: white;
+	border-bottom: 1rem solid #cd4a44;
+	background: #fd635c;
+	overflow: hidden;
+	width: 100%;
+}
+
+.title-wrap {
+	color: white;
+	background: #fd635c;
+	overflow: hidden;
+	padding: 0.5rem 2.5rem 0.5rem;
+	margin: 0 auto;
+	max-width: 1100px;
+}
+
+.title-tagline {
+	display: block;
+	font-size: 1.3rem;
+	font-weight: 100;
+}
+
+.title-name {
+	display: block;
+	font-weight: 500;
+}
+
+.charles-logo-wrap {
+	box-shadow: 0 0 15px rgba(0,0,0,0.1);
+	background: #fbeca8;
+	border-radius: 300px;
+	display: block;
+	height: 300px;
+	border: 1rem solid white;
+	padding: 0.9rem 2.5rem;
+	overflow: hidden;
+	text-align: right;
+	float: right;
+	margin: 0 0 2rem 3rem;
+	width: 300px;
+}
+
+.charles-logo {
+	display: block;
+	width: 100%;
+}
+
+.menu-icon {
+	box-sizing: border-box;
+	background: url(../menu.svg) center no-repeat;
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 50px;
+	cursor: pointer;
+	height: 17px;
+	padding: 2rem;
+	position: fixed;
+	right: 16px;
+	top: 16px;
+	width: 17px;
+	transition: padding 150ms, background-color 150ms;
+	z-index: 2;
+}
+
+.menu-icon:hover {
+	background-color: rgba(255,255,255,0.5);
+}
+
+.menu {
+	box-sizing: border-box;
+	background: #393939;
+	height: 100%;
+	position: fixed;
+	margin: 0;
+	padding: 7rem 0;
+	width: 250px;
+	right: -250px;
+	top: 0;
+	list-style: none;
+	z-index: 1;
+}
+
+.main-menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.menu-item {
+	display: block;
+	color: white;
+	cursor: pointer;
+	padding: 1.5rem;
+	text-decoration: none;
+}
+
+.menu-item:hover {
+	color: black;
+	background: white;
+}
+
+.unpublished-menu,
+.published-menu {
+	box-sizing: border-box;
+	background: #393939;
+	list-style: none;
+	padding: 7rem 0;
+	position: fixed;
+	height: 100%;
+	right: -255px;
+	top: 0;
+	width: 250px;
+	z-index: 3;
+}
+
+.back-icon {
+	box-sizing: border-box;
+	background: url(../back.svg) center no-repeat;
+	background-color: rgba(255,255,255,0.4);
+	border-radius: 50px;
+	cursor: pointer;
+	padding: 2rem;
+	position: absolute;
+	top: 5px;
+	right: 85px;
+	width: 17px;
+	height: 17px;
+}
+
+.home-subtitle {
+	display: block;
+	margin-top: 0;
+	font-size: 2.5rem;
+}
+
+.home-subtitle-dates {
+}
+
+.home-title {
+	display: block;
+	float: left;
+}
+
+.home-menu {
+	display: block;
+	float: right;
+}
+
+.story-info {
+	float: right;
+	text-align: right;
+}
+
+.story-publisher {
+	display: block;
+}
+
+.story-published {
+	color: #fbeca8;
+	display: block;
+	font-size: 2rem;
+	font-weight: 100;
+}
+
+
+
+

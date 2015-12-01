@@ -1,0 +1,35 @@
+<header>
+  <div class="header-content">
+    <div class="title-wrap">
+      <h1 class="home-title">
+        <span class="title-tagline">Charles R. Tanner</span>
+        <span class="title-name">{{ page.title }}</span>
+      </h1>
+      <h2 class="story-info">
+        <span class="story-publisher">{{ page.publisher }}</span>
+        <span class="story-published">{{ page.published }}</span>
+      </h2>
+    </div>
+  </div>
+  
+  <i class="menu-icon"></i>
+ 
+  <ul class="menu">
+    <li><a href="/"class="menu-item">About</a></li>
+    <li><a class="menu-item published">Published stories</a></li>
+    <li><a class="menu-item unpublished">Unpublished stories</a></li>
+    <li><a href="/contact" class="menu-item">Contact</a></li>
+  </ul>
+
+  <ul class="published-menu">
+    <i class="back-icon"></i>
+    {% for post in site.categories.published reversed %}
+      <li><a class="menu-item" href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+
+  <ul class="unpublished-menu">
+    <i class="back-icon"></i>
+  </ul>
+</header>
+

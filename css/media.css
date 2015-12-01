@@ -1,0 +1,62 @@
+@media screen and (max-width: 1250px) {
+	.home-title {
+		float: none;
+		margin: 0.2rem 0;
+	}
+
+	.story-info {
+		float: none;
+		margin: 0.2rem 0;
+		text-align: left;
+	}
+
+	.story-publisher,
+	.story-published {
+		display: inline-block;
+		font-size: 1rem;
+	}
+
+	.title-name {
+		font-size: 2rem;
+	}
+
+	.home-subtitle {
+		font-size: 1.6rem;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.home-title {
+		padding: 0;
+		margin: 0;
+	}
+
+	.title-wrap {
+		margin: 1rem auto 0.8rem;
+	}
+
+	.title-name {
+		font-size: 1.4rem;
+	}
+
+	.title-tagline {
+		font-size: 1.1rem;
+	}
+
+	.story-info {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.charles-logo-wrap {
+		height: 200px;
+		width: 200px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.charles-logo-wrap {
+		float: none;
+		margin: 0 auto 1.5rem;
+	}
+}

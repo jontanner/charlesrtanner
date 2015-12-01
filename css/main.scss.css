@@ -1,0 +1,106 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	background: #f8f8f8;
+	font-family: 'Roboto';
+	color: #393939;
+	margin: 0;
+	padding: 0;
+}
+
+.title-wrap {
+	color: white;
+	border-bottom: 2rem solid #cd4a44;
+	background: #fd635c;
+	overflow: hidden;
+	padding: 2.5rem 2.5rem 2rem;
+	display: flex;
+}
+
+.title-tagline {
+	display: block;
+	font-size: 1.3rem;
+	font-weight: 100;
+}
+
+.title-name {
+	font-weight: 500;
+}
+
+.charles-logo-wrap {
+	box-shadow: 0 0 15px rgba(0,0,0,0.1);
+	background: #fbeca8;
+	border-radius: 300px;
+	display: block;
+	height: 260px;
+	border: 1rem solid white;
+	padding: 0.9rem 2.5rem;
+	overflow: hidden;
+	text-align: right;
+	width: 260px;
+	margin: -13rem auto 2rem;
+
+}
+
+.charles-logo {
+	display: block;
+	width: 100%;
+}
+
+.menu-icon {
+	box-sizing: border-box;
+	background: url(menu.svg) center no-repeat;
+	background-color: rgba(255,255,255,0.4);
+	border-radius: 50px;
+	cursor: pointer;
+	height: 17px;
+	padding: 2rem;
+	position: absolute;
+	right: 16px;
+	top: 16px;
+	width: 17px;
+	transition: padding 150ms, background-color 150ms;
+	z-index: 2;
+}
+
+.menu-icon:hover {
+	padding: 2.1rem;
+	background-color: rgba(255,255,255,0.5);
+}
+
+.menu {
+	background: #393939;
+	height: 100%;
+	position: fixed;
+	width: 250px;
+	right: -250px;
+	top: 0;
+	z-index: 1;
+}
+
+.close-icon {
+	background: url(close.svg) center no-repeat;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 17px;
+	height: 17px;
+}
+
+
+.home-subtitle {
+	margin-top: 9rem;
+	font-size: 2.5rem;
+	text-align: center;
+}
+
+.home-subtitle-dates {
+	text-align: center;
+}
+
+
+
+
+
