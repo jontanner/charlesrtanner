@@ -11,12 +11,14 @@ body {
 }
 
 header {
+	position: absolute;
+	top: 0;
 	width: 100%;
 }
 
 .content {
-	padding: 0 2rem;
-	margin: 2rem auto 2rem;
+	padding: 0 2rem 4rem;
+	margin: 11rem auto 0;
 	max-width: 1100px;
 }
 
@@ -33,6 +35,7 @@ header {
 	background: #fd635c;
 	overflow: hidden;
 	padding: 0.5rem 2.5rem 0.5rem;
+	position: relative;
 	margin: 0 auto;
 	max-width: 1100px;
 }
@@ -53,14 +56,13 @@ header {
 	background: #fbeca8;
 	border-radius: 300px;
 	display: block;
-	height: 300px;
+	height: 320px;
 	border: 1rem solid white;
 	padding: 0.9rem 2.5rem;
 	overflow: hidden;
 	text-align: right;
-	float: right;
-	margin: 0 0 2rem 3rem;
-	width: 300px;
+	margin: 2rem auto;
+	width: 320px;
 }
 
 .charles-logo {
@@ -70,6 +72,8 @@ header {
 
 .menu-icon {
 	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 	background: url(../menu.svg) center no-repeat;
 	background-color: rgba(255,255,255,0.5);
 	border-radius: 50px;
@@ -90,7 +94,9 @@ header {
 
 .menu {
 	box-sizing: border-box;
-	background: #393939;
+	-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+	background: #343434;
 	height: 100%;
 	position: fixed;
 	margin: 0;
@@ -124,7 +130,7 @@ header {
 .unpublished-menu,
 .published-menu {
 	box-sizing: border-box;
-	background: #393939;
+	background: #343434;
 	list-style: none;
 	padding: 7rem 0;
 	position: fixed;
@@ -137,6 +143,8 @@ header {
 
 .back-icon {
 	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 	background: url(../back.svg) center no-repeat;
 	background-color: rgba(255,255,255,0.4);
 	border-radius: 50px;
@@ -149,13 +157,31 @@ header {
 	height: 17px;
 }
 
-.home-subtitle {
-	display: block;
-	margin-top: 0;
-	font-size: 2.5rem;
+.home-container {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+	display: flex;
+	height: 100%;
 }
 
-.home-subtitle-dates {
+.home-wrap {
+	padding-top: 12rem;
+	width: 100%;
+}
+
+.home-subtitle {
+	display: block;
+	margin: 0;
+	padding: 0;
+	font-size: 2.5rem;
+	text-align: center;
+}
+
+.home-years-active {
+	padding: 0;
+	margin: 0;
+	text-align: center;
 }
 
 .home-title {
@@ -164,8 +190,28 @@ header {
 }
 
 .home-menu {
+	list-style: none;
+	position: absolute;
+	right: 0;
+}
+
+.home-menu li {
+	display: inline-block;
+}
+
+.home-menu-item {
 	display: block;
-	float: right;
+	color: white;
+	cursor: pointer;
+	font-size: 1.2rem;
+	padding: 1.8rem 3rem 4rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.home-menu-item:hover {
+	background: #cd4a44;
 }
 
 .story-info {
@@ -185,5 +231,240 @@ header {
 }
 
 
+/* ABOUT */
+
+#about {
+	background: #293a58;
+}
 
 
+.about-wrap {
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+	-webkit-flex-direction: row-reverse;
+	-moz-flex-direction: row-reverse;
+	-ms-flex-direction: row-reverse;
+	-flex-direction: row-reverse;
+	box-sizing: border-box;
+	padding: 5rem 4rem 11rem;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.about-info-wrap {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-flex: 0 0 60%;
+  -moz-box-flex: 0 0 60%;
+  -webkit-flex: 0 0 60%;
+  -ms-flex: 0 0 60%;
+	flex: 0 0 60%;
+	color: white;
+	padding-left: 4rem;
+}
+
+.about-title {
+	font-size: 3rem;
+}
+
+.about-paragraph {
+	font-size: 1.2rem;
+}
+
+.about-graphic-wrap {
+	-webkit-box-flex: 0 0 40%;
+  -moz-box-flex: 0 0 40%;
+  -webkit-flex: 0 0 40%;
+  -ms-flex: 0 0 40%;
+	flex: 0 0 40%;
+	max-width: 650px;
+}
+
+.about-graphic {
+	width: 100%;
+}
+
+/* Authors Note */
+
+.authors-note-wrap {
+	padding: 4rem 1rem 9rem;
+	margin: 0 auto;
+	max-width: 1100px;
+	text-align: justify;
+}
+
+.authors-note-info-wrap {
+	font-family: 'Lora';
+}
+
+.authors-note-info-top {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+	margin: 3rem 0;
+}
+
+.authors-note-title {
+	font-size: 3rem;	
+	margin: 0;
+}
+
+.authors-note-paragraph-top {
+	-webkit-box-flex: 1 1 60%;
+  -moz-box-flex: 1 1 60%;
+  -webkit-flex: 1 1 60%;
+  -ms-flex: 1 1 60%;
+	flex: 1 1 60%;
+	font-size: 1.6rem;
+	margin: 0;
+	padding-right: 3.5rem;
+}
+
+.authors-note-paragraph {
+	font-size: 1.1rem;
+	margin: 1rem 0;
+	padding: 0;
+}
+
+.authors-note-signature {
+	font-size: 2rem;
+	padding: 1rem 0;
+	display: block;
+	text-align: right;
+}
+
+.charles-desk-wrap {
+	-webkit-box-flex: 1 1 25%;
+  -moz-box-flex: 1 1 25%;
+  -webkit-flex: 1 1 25%;
+  -ms-flex: 1 1 25%;
+	flex: 1 1 25%;
+}
+
+.charles-desk {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+	box-shadow: 0 0 15px rgba(0,0,0,0.1);
+	border: 1rem solid white;
+	display: block;
+	width: 100%;
+}
+
+/* Contact */
+
+#contact {
+	color: white;
+	background: #252525;
+	padding: 4rem 2rem 12rem;
+}
+
+.contact-wrap {
+	margin: 0 auto;
+	max-width: 800px;
+}
+
+.contact-title {
+	font-size: 3rem;
+	padding: 0;
+	margin: 0;
+}
+
+.contact-info {
+	font-size: 1.5rem;
+	font-weight: 200;
+	margin: 2rem 0;
+}
+
+.contact-form {
+	display: block;
+}
+
+input:focus,
+textarea:focus {
+	outline: none;
+}
+
+fieldset {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+input[type="text"],
+textarea {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+	resize: none;
+	width: 100%;
+	color: white;
+	font-size: 1.3rem;
+	border: none;
+	background: rgba(0,0,0,0.5);
+	padding: 2rem;
+	margin-bottom: 1rem;
+}
+
+textarea {
+	padding-bottom: 9rem;
+}
+
+input[type="submit"] {
+	background: #f8f8f8;
+	color: #252525;
+	border: none;
+	font-size: 1.5rem;
+	padding: 2rem;
+	font-weight: 400;
+	width: 100%;
+}
+
+/* Sticky Bottom Menu */
+
+.sticky-bottom-menu {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+	background-color: #252525;
+	bottom: -100px;
+	list-style: none;
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	width: 100%;
+	transition: bottom 250ms;
+} 
+
+.sticky-bottom-menu li {
+	-webkit-box-flex: 1 1 auto;
+  -moz-box-flex: 1 1 auto;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+}
+
+.bottom-menu-item {
+	color: white;
+	cursor: pointer;
+	display: block;
+	padding: 2rem;
+	text-align: center;
+}
+
+.bottom-menu-item:hover {
+	background: #161616;
+}

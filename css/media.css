@@ -1,7 +1,43 @@
 @media screen and (max-width: 1250px) {
+	header,
+	.title-wrap {
+		position: static;
+	}
+
+	.header-content {
+		border: none;
+	}
+
+	.home-menu {
+		background: #cd4a44;
+		padding: 0;
+	  display: -webkit-box;
+	  display: -moz-box;
+	  display: -ms-flexbox;
+	  display: -webkit-flex;
+	  display: flex;		
+	  top: 4.8rem;
+		right: auto;
+		left: 0;
+		width: 100%;
+	}
+
+	.home-menu li {
+	  -webkit-box-flex: 1 1 auto;
+	  -moz-box-flex: 1 1 auto;
+	  -webkit-flex: 1 1 auto;
+	  -ms-flex: 1 1 auto;
+		flex: 1 1 auto;
+	}
+
 	.home-title {
 		float: none;
 		margin: 0.2rem 0;
+	}
+
+	.home-menu-item {
+		background: #cd4a44;
+		padding: 1rem 0;
 	}
 
 	.story-info {
@@ -25,7 +61,55 @@
 	}
 }
 
+@media screen and (max-width: 1100px) {
+	.about-wrap {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		padding: 2rem 2rem 6rem;
+	}
+
+	.about-info-wrap,
+	.about-graphic-wrap {
+		-webkit-flex: 1 1 auto;
+		-moz-flex: 1 1 auto;
+		-ms-flex: 1 1 auto;
+		flex: 1 1 auto;
+
+	}
+
+	.about-info-wrap {
+		padding: 0;
+	}
+
+	.about-graphic-wrap {
+		padding-top: 2rem;
+	}
+
+	.charles-desk-wrap,
+	.authors-note-paragraph-top {
+		-webkit-flex: 1 1 50%;
+		-moz-flex: 1 1 50%;
+		-ms-flex: 1 1 50%;
+		flex: 1 1 50%;
+	}
+
+	.home-wrap {
+		padding-top: 6rem;
+	}
+}
+
 @media screen and (max-width: 800px) {
+
+	.home-menu {
+		top: 5rem;
+	}
+
+	.home-menu-item {
+		font-size: 0.9rem;
+	}
+
 	.home-title {
 		padding: 0;
 		margin: 0;
@@ -48,9 +132,79 @@
 		margin-bottom: 0;
 	}
 
-	.charles-logo-wrap {
-		height: 200px;
-		width: 200px;
+	.about-title {
+		font-size: 2rem;
+	}
+
+	.about-paragraph {
+		font-size: 1rem;
+	}
+
+	.authors-note-info-top {
+		-webkit-flex-direction: column-reverse;
+		-moz-flex-direction: column-reverse;
+		-ms-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+	}
+
+	.charles-desk-wrap,
+	.authors-note-paragraph-top {
+		-webkit-flex: 1 1 auto;
+		-moz-flex: 1 1 auto;
+		-ms-flex: 1 1 auto;
+		flex: 1 1 auto;
+	}
+
+	.authors-note-title {
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	.authors-note-info-top {
+		margin: 0;
+	}
+
+
+	.authors-note-paragraph-top {
+		font-size: 1rem;
+		padding: 0;
+		margin: 1rem 0 0 0;
+	}
+
+	.charles-desk {
+		margin: 2rem auto;
+		max-width: 400px;
+	}
+
+	.authors-note-paragraph {
+		font-size: 1rem;
+	}
+
+	#contact {
+		padding-bottom: 9rem;
+	}
+
+	.contact-title {
+		font-size: 2rem;
+	}
+
+	.contact-info {
+		font-size: 1.3rem;
+	}
+
+	input[type="text"],
+	textarea {
+		font-size: 1rem;
+		padding: 1.2rem;
+	}
+
+	input[type="submit"] {
+		font-size: 1rem;
+		padding: 1.5rem;
+	}
+
+	textarea {
+		padding-bottom: 8rem;
 	}
 }
 
@@ -58,5 +212,17 @@
 	.charles-logo-wrap {
 		float: none;
 		margin: 0 auto 1.5rem;
+		height: 200px;
+		width: 200px;
+	}
+
+	.bottom-menu-item {
+		padding: 0.9rem 0.5rem;
+		font-size: 0.8rem;
+	}
+
+	.menu-icon,
+	.back-icon {
+		padding: 1.3rem;
 	}
 }
