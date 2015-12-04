@@ -18,6 +18,10 @@
   <ul class="menu">
     <li><a class="menu-item published">Published stories</a></li>
     <li><a class="menu-item unpublished">Unpublished stories</a></li>
+    <li><a class="about menu-item">About</a></li>
+    <li><a class="authors-note menu-item">Authors note</a></li>
+    <li><a class="contact menu-item">Contact</a></li>
+
   </ul>
 
   <ul class="published-menu">
@@ -29,6 +33,9 @@
 
   <ul class="unpublished-menu">
     <i class="back-icon"></i>
+    {% for post in site.categories.unpublished reversed %}
+      <li><a class="menu-item" href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
   </ul>
 </header>
 

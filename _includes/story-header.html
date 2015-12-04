@@ -31,6 +31,9 @@
 
   <ul class="unpublished-menu">
     <i class="back-icon"></i>
+    {% for post in site.categories.unpublished reversed %}
+      <li><a class="menu-item" href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
   </ul>
 </header>
 

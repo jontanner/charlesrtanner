@@ -8,7 +8,7 @@ $(document).ready(function() {
 	menuIcon.click(function() {
 		var menuPos = $('.menu').css('right');
 
-		if(menuPos == "-250px") {
+		if(menuPos == "-270px") {
 			$(this).animate({
 				right: "85px"
 			}, menuSpeed)
@@ -20,7 +20,7 @@ $(document).ready(function() {
 				right: "16px"
 			}, menuSpeed)
 			menu.animate({
-				right: "-250px"
+				right: "-270px"
 			}, menuSpeed)
 		}
 	});

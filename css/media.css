@@ -4,6 +4,10 @@
 		position: static;
 	}
 
+	.content {
+		margin: 2rem auto 0;
+	}
+
 	.header-content {
 		border: none;
 	}
@@ -223,6 +227,6 @@
 
 	.menu-icon,
 	.back-icon {
-		padding: 1.3rem;
+		padding: 1.6rem;
 	}
 }

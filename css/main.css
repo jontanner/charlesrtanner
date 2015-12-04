@@ -74,7 +74,7 @@ header {
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-	background: url(../menu.svg) center no-repeat;
+	background: url(../book.svg) 49% 45% no-repeat;
 	background-color: rgba(255,255,255,0.5);
 	border-radius: 50px;
 	cursor: pointer;
@@ -89,10 +89,11 @@ header {
 }
 
 .menu-icon:hover {
-	background-color: rgba(255,255,255,0.5);
+	background-color: rgba(255,255,255,0.6);
 }
 
 .menu {
+	box-shadow: -10px 0 15px rgba(0,0,0,0.15);
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -100,9 +101,10 @@ header {
 	height: 100%;
 	position: fixed;
 	margin: 0;
+	oveflow: scroll;
 	padding: 7rem 0;
 	width: 250px;
-	right: -250px;
+	right: -270px;
 	top: 0;
 	list-style: none;
 	z-index: 1;
@@ -132,13 +134,19 @@ header {
 	box-sizing: border-box;
 	background: #343434;
 	list-style: none;
-	padding: 7rem 0;
+	padding: 6rem 0 0;
 	position: fixed;
 	height: 100%;
 	right: -255px;
 	top: 0;
 	width: 250px;
 	z-index: 3;
+}
+
+.unpublished-menu .menu-item,
+.published-menu .menu-item {
+	font-size: 0.9rem;
+	padding: 0.6rem 1rem;
 }
 
 .back-icon {
@@ -273,10 +281,11 @@ header {
 
 .about-title {
 	font-size: 3rem;
+	margin-bottom: 1.5rem;
 }
 
 .about-paragraph {
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 }
 
 .about-graphic-wrap {
